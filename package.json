@@ -36,9 +36,10 @@
   "devDependencies": {
     "eslint": "^7.22.0",
     "eslint-plugin-react": "^7.22.0",
+    "gh-pages": "^3.2.0",
     "prettier": "^2.2.1"
   },
-  "homepage": "https://github.com/wangonya/flexible-gatsby",
+  "homepage": "https://mishi-a.github.io/blog-site",
   "keywords": [
     "gatsby"
   ],
@@ -49,6 +50,8 @@
     "url": "git+https://github.com/wangonya/flexible-gatsby.git"
   },
   "scripts": {
+    "predeploy": "gatsby build",
+    "deploy": "gh-pages -d public",
     "build": "gatsby build",
     "dev": "gatsby develop",
     "develop": "gatsby develop",
